@@ -1,5 +1,12 @@
 /**
+ * @author Ikram Gabiyev
+ * *************************
  * Queue Data Structure
+ * I decided to perform shifting EVERY TIME I DEQUEUE
+ * Mainly because this way I can stop dealing with "bottom" field variable
+ * As only "0" index will always be returned when dequeueing or peeking
+ * This way I deal only with variable "top"
+ * I handled corner cases by printing a message to user an returning -1
  */
 
 public class Queue {
@@ -8,6 +15,8 @@ public class Queue {
     //list pointer
     private int top = 0;
 
+
+    
     public void enqueue(int a)  {
         if (this.top == this.list.length) {
             //storing all elements in a temporary array

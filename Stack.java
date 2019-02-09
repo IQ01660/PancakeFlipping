@@ -1,6 +1,8 @@
 import java.util.Vector;
 
 /**
+ * @author Ikram Gabiyev
+ * ************************
  * Stack Data Structure
  */
 
